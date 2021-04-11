@@ -1,0 +1,46 @@
+.title {
+  display: flex;
+  text-align: center;
+  height: 10vh;
+  background-color: lightgrey;
+  color: black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleText {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  background-color: grey;
+  height: 10vh;
+  list-style-type: none;
+}
+
+.navbarDiv:hover {
+  background-color: white;
+}
+
+.navbarLinkZipCode {
+  height: 10vh;
+  width: 50vw;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarLinkCity {
+  height: 10vh;
+  width: 50vw;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
