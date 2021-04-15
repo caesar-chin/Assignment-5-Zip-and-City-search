@@ -5,8 +5,14 @@ import styles from '../Styles/ZipCodeStyles.module.css';
 function City({ data }) {
   return (
     <div className={styles.cities}>
+      <div>
+        City: {data.City}, {data.State}
+      </div>
       <ul className={styles.citylist}>
-        <li>{data.City}</li>
+        <li>
+          Location:({data.Lat},{data.Long})
+        </li>
+        <li>Estimated Population: {data.EstimatedPopulation}</li>
       </ul>
     </div>
   );
