@@ -44,3 +44,13 @@
   align-items: center;
 }
 
+.cities {
+  display: block;
+  border: 1px solid black;
+  width: 50%;
+  list-style: none;
+}
+
+.citylist {
+  list-style: none;
+}
