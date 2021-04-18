@@ -59,21 +59,21 @@ export default class ZipCode extends Component {
         </div>
         <nav className={styles.navbar}>
           <div className={styles.navbarDiv}>
-            <Link to={"/city"} className={styles.navbarLinkZipCode}>
+            <Link to={"/zipcode"} className={styles.navbarLinkZipCode}>
+              <div className={styles.navbarItem}>
+                <li>Zip Code Lookup:</li>
+              </div>
+            </Link>
+          </div>
+
+          <div className={styles.navbarDiv}>
+            <Link to={"/city"} className={styles.navbarLinkCity}>
               <div className={styles.navbarItem}>
                 <li>City Lookup:</li>
                 <CitySearchField
                   City={this.state.City}
                   onChange={(e) => this.cityChanged(e)}
                 />
-              </div>
-            </Link>
-          </div>
-
-          <div className={styles.navbarDiv}>
-            <Link to={"/zip"} className={styles.navbarLinkZip}>
-              <div className={styles.navbarItem}>
-                <li>Zip Code Lookup</li>
               </div>
             </Link>
           </div>

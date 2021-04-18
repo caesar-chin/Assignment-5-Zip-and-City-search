@@ -77,6 +77,7 @@ export default class ZipCode extends Component {
               </div>
             </Link>
           </div>
+          
           <div className={styles.navbarDiv}>
             <Link to={"/city"} className={styles.navbarLinkCity}>
               <div className={styles.navbarItem}>
