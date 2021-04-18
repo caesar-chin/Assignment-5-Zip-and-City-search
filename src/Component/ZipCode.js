@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import styles from '../Styles/ZipCodeStyles.module.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import styles from "../Styles/ZipCodeStyles.module.css";
 
 function City({ data }) {
   return (
@@ -22,9 +22,9 @@ function ZipSearchField({ zipCode, onChange }) {
   return (
     <div>
       <input
-        type='text'
+        type="text"
         value={zipCode}
-        placeholder='Enter Zip Code'
+        placeholder="Enter Zip Code"
         onChange={onChange}
       ></input>
     </div>
@@ -36,7 +36,7 @@ export default class ZipCode extends Component {
     super(props);
     this.state = {
       cities: [],
-      zipCode: '',
+      zipCode: "",
     };
   }
 
@@ -67,7 +67,7 @@ export default class ZipCode extends Component {
         </div>
         <nav className={styles.navbar}>
           <div className={styles.navbarDiv}>
-            <Link to={'/zipcode'} className={styles.navbarLinkZipCode}>
+            <Link to={"/zipcode"} className={styles.navbarLinkZipCode}>
               <div className={styles.navbarItem}>
                 <li>Zip Code Lookup:</li>
                 <ZipSearchField
@@ -78,7 +78,7 @@ export default class ZipCode extends Component {
             </Link>
           </div>
           <div className={styles.navbarDiv}>
-            <Link to={'/city'} className={styles.navbarLinkCity}>
+            <Link to={"/city"} className={styles.navbarLinkCity}>
               <div className={styles.navbarItem}>
                 <li>City Lookup</li>
               </div>

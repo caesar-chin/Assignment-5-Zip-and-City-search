@@ -44,3 +44,16 @@
   align-items: center;
 }
 
+.citylist {
+  list-style: none;
+}
+
+.cities {
+  display: block;
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 300px;
+  border: 2px solid grey;
+  padding: 30px;
+  border-radius: 25px;
+}
