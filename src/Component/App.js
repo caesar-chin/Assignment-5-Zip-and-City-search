@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
-} from 'react-router-dom';
-import ZipCode from './ZipCode';
-import City from './City';
+} from "react-router-dom";
+import ZipCode from "./ZipCode";
+import City from "./City";
 
 export default class App extends Component {
   constructor(props) {
@@ -18,13 +18,19 @@ export default class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route exact path='/'>
-            <Redirect to='/zipcode' />
+          <Route exact path="/">
+            <Redirect to="/zipcode" />
           </Route>
-          <Route exact path='/zipcode'>
+
+          <Route exact path="/zipcode">
             <ZipCode />
           </Route>
-          <Route exact path='/city'>
+
+          <Route exact path="/">
+            <Redirect to="/cityname" />
+          </Route>
+
+          <Route exact path="/city">
             <City />
           </Route>
         </Switch>
