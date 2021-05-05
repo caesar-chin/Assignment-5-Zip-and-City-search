@@ -5,6 +5,9 @@ The user can either search by city name or zipcode.
 If they search by city name --> It provides them with all the zipcodes for that city.  
 If they search by zipcode --> It provides them with the city, the coordinates, and the estimated population.  
 
+The program works by detecting when the entry in the search field has changed. Once it has, it fetches data from
+the API that corresponds with the search and produces the results in a div container.
+
 The following is a zipcode search:
 
 
