@@ -1,4 +1,4 @@
-# https://zip-city-search-assignment5.netlify.app/
+# https://zip-city-search.netlify.app
 
 The following project uses react to pull data from an API. It reads in the cities and the zipcodes.  
 The user can either search by city name or zipcode.  
